@@ -9,13 +9,30 @@
 </head>
 <body>
     <div class="header">
-        <p class="library">Library</p>
-        <button class="sign-in">Sign In</button>
+        <p class="library">library</p>
+        <button class="sign-in">Log In</button>
     </div>
     <div class="main">
         <div class="add-container">
             <button class="add">+ Add Book</button>
         </div>
+
+        <div class="overlay">
+            <div class="new-book">
+                <h3>Add new book</h3>
+                <input type="text" id="title" placeholder="Title" class="inputs">
+                <input type="text" id="author" placeholder="Author" class="inputs">
+                <input type="number" id="pages" placeholder="Pages" class="inputs">
+                <div class="checkbox-container">
+                    <label for="read">Have you read it?</label>
+                    <input type="checkbox" id="read">
+                </div>
+                <button class="submit-btn">Submit</button>
+            </div>
+        </div> 
+
+
+        <div class="booklist"></div>
     </div>
     
     <script src="script.js"></script>
