@@ -106,6 +106,7 @@ body{
     background-color: white;
     font-size: 24px;
     border: transparent;
+    font-family: 'library', sans-serif;
 }
 
 .inputs:hover{
@@ -116,6 +117,7 @@ body{
 .inputs::placeholder{
     font-size: 26px;
     padding: 8px;
+    font-family: 'library', sans-serif;
 }
 
 .checkbox-container{
