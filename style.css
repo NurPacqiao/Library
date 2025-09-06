@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    font-family: 'library', sans-serif;
+}
+
 @font-face {
     font-family: 'library';
     src: url('StoryScript-Regular.ttf');
@@ -14,12 +18,9 @@
     justify-content: space-between;
     align-items: center;
     height: 50px;
-    padding: 20px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 20px 100px;
     border: 0.5px solid black;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
-    background-size: cover;
 }
 
 .new-book,
@@ -33,23 +34,26 @@
     align-items: center;
 }
 
+.btn {
+    border-radius: 10px;
+    font-family: inherit;
+    cursor: pointer;
+    border: transparent;
+}
+
 .sign-in{
     border: 0.5px solid black;
-    border-radius: 10px;
     width: 90px;
     height: 35px;
     background-color: rgb(220, 220, 220);
     font-size: 18px;
     font-weight: bold;
-    font-family: 'library', system-ui, sans-serif;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.24);
-    cursor: pointer;
 }
 
 .library{
     font-size: 34px;
     font-weight: bold;
-    font-family: 'library', system-ui, sans-serif;
 }
 
 .add-container{
@@ -63,15 +67,12 @@
 
 .add{
     border: 0.5px solid black;
-    border-radius: 10px;
     width: 120px;
     height: 40px;
     background-color: rgb(220, 220, 220);
     font-size: 18px;
     font-weight: bold;
-    font-family: 'library', system-ui, sans-serif;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.24);
-    cursor: pointer;
 }
 
 .overlay{
@@ -95,18 +96,16 @@
     height: 380px;
     background-color: rgb(255, 247, 236);
     font-size: 28px;
-    font-family: 'library', sans-serif;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.36);
 }
 
 .inputs{
     width: 240px;
     height: 45px;
-    border: transparent;
     border-radius: 10px;
     background-color: white;
-    font-family: 'library', sans-serif;
     font-size: 24px;
+    border: transparent;
 }
 
 .inputs:hover{
@@ -118,7 +117,6 @@
     font-size: 26px;
     padding: 8px;
 }
-
 
 .checkbox-container{
     display: flex;
@@ -135,18 +133,13 @@
 .submit-btn{
     width: 140px;
     height: 38px;
-    border: transparent;
-    border-radius: 16px;
     background-color: rgb(0, 195, 130);
     font-size: 28px;
-    font-family: 'library', sans-serif;
-    cursor: pointer;
 }
 
 .submit-btn:hover{
     background-color: rgb(0, 170, 114);
 }
-
 
 .book-container{
     display: none;
@@ -156,18 +149,17 @@
     width: 290px;
     height: 350px;
     border-radius: 10px;
-    padding: 15px;
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.24);
+    transition: transform 0.4s ease, transform 0.8s ease;
 }
 
 .book-container:hover{
     scale: 1.01;
-    transition: 0.2s;
+    transform: translateY(-5px);   
 }
 
 .book-info{
     font-size: 24px;
-    font-family: 'library', sans-serif;
     text-align: center;
     width: 100%;
 }
@@ -177,11 +169,7 @@
     height: 35px;
     background-color: red;
     color: white;
-    border: transparent;
-    border-radius: 10px;
     font-size: 24px;
-    font-family: 'library', sans-serif;
-    cursor: pointer;
 }
 
 #read-not-read{
@@ -189,11 +177,7 @@
     height: 35px;
     background-color: red;
     color: white;
-    border: transparent;
-    border-radius: 10px;
     font-size: 24px;
-    font-family: 'library', sans-serif;
-    cursor: pointer;
 }
 
 .booklist{
